@@ -1,0 +1,7 @@
+cd "C:\Users\bruno\OneDrive\Área de Trabalho\brunoepedraoweling\form\loja"
+
+
+cd "E:\brunoepedraoweling\form\loja"
+
+npm start
+
