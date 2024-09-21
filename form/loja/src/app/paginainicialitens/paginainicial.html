@@ -1,0 +1,64 @@
+<div class="container mt-5">
+  <div *ngIf="!formSubmitted" class="row">
+    <div class="col-md-4 mb-4">
+      <div class="product-box border rounded-lg shadow-lg bg-light p-3">
+        <img src="https://cdn.awsli.com.br/2500x2500/1106/1106288/produto/41212892/nova-embalagem-kit-completo-renova-meu-cabelo-reconstrucao-shampoo-condicionador-jodtje2j4h.jpg" alt="Produto 1" class="img-fluid mb-2" style="height: 515px; object-fit: cover;">
+        <div class="text-center">
+          <h3 class="text-primary">Cabelo Perfecto 4 kits</h3>
+          <p>Produto para tratamento capilar</p>
+          <p><strong>Preço: R$ 99,99</strong></p>
+        </div>
+        <button (click)="onSubmit()" class="btn btn-primary btn-lg w-100">Finalizar Compra</button>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="product-box border rounded-lg shadow-lg bg-light p-3">
+        <img src="https://images.tcdn.com.br/img/img_prod/763758/shampoo_dove_nutricao_fusao_de_oleos_400_ml_16538_1_9b7895ccdbc3bbbff86bd4db97d9e05f.jpg" alt="Produto 2" class="img-fluid mb-2" style="height: 515px; object-fit: cover;">
+        <div class="text-center">
+          <h3 class="text-primary">Shampoo Revitalizante</h3>
+          <p>Shampoo para revitalização dos fios</p>
+          <p><strong>Preço: R$ 149,99</strong></p>
+        </div>
+        <button (click)="onSubmit()" class="btn btn-primary btn-lg w-100">Finalizar Compra</button>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="product-box border rounded-lg shadow-lg bg-light p-3">
+        <img src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/478700-800-800/elseve-oleo-extraordinario-nutricao-l-oreal-paris-condicionador-400ml--2-.jpg?v=637820008962400000" alt="Produto 3" class="img-fluid mb-2" style="height: 515px; object-fit: cover;">
+        <div class="text-center">
+          <h3 class="text-primary">Condicionador Nutritivo</h3>
+          <p>Condicionador para nutrição intensa</p>
+          <p><strong>Preço: R$ 199,99</strong></p>
+        </div>
+        <button (click)="onSubmit()" class="btn btn-primary btn-lg w-100">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5" style="background-color: #000000; color: #000000; border-radius: 10px; padding: 30px; background-color: black;">
+    <div *ngIf="formSubmitted" class="text-center mt-5 p-5 border rounded-lg shadow-lg bg-success text-white">
+      <h2 class="mb-3" style="font-size: 3rem; font-family: 'Roboto', sans-serif; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Compra Realizada com Sucesso!</h2>
+      <p class="lead mb-4" style="font-weight: 300; font-size: 1.5rem;">A sua compra foi realizada com sucesso.</p>
+      <img src="https://img.icons8.com/ios/452/checkmark.png" alt="Ícone de Sucesso" style="width: 120px; margin: 20px auto;" />
+      <p style="font-size: 1.5rem; margin-top: 20px;">Obrigado por escolher a LojaPedroeBrunão!</p>
+    </div>
+  </div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.product-box {
+  transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+  transform: scale(1.05);
+}
+</style>
